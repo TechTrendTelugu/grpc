@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_package = "com.examples.helloworld";
+
+
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloWorldRequest) returns (HelloworldResponse) {}
+}
+
+// The request message 
+message HelloWorldRequest {
+  string name = 1;
+}
+
+// The response message 
+message HelloworldResponse {
+  string message = 1;
+}
